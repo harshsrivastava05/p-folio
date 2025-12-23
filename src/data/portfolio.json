@@ -1,0 +1,392 @@
+{
+  "personalInfo": {
+    "name": "Harsh Srivastava",
+    "age": 22,
+    "email": "harshsrivastava8704@gmail.com",
+    "location": {
+      "city": "Kanpur",
+      "state": "Uttar Pradesh",
+      "country": "India"
+    }
+  },
+  "education": {
+    "currentStatus": "Fourth-year CSE Undergraduate",
+    "college": {
+      "name": "Pranveer Singh Institute of Technology (PSIT)",
+      "location": "Kanpur",
+      "degree": "Bachelor of Technology",
+      "field": "Computer Science and Engineering",
+      "studentId": "2201641530201"
+    }
+  },
+  "about": {
+    "summary": "Full-Stack and AI Engineer focused on scalable backend systems, real-time architectures, and production-ready agentic AI workflows.",
+    "keyTraits": [
+      "Systems thinker",
+      "Fast learner",
+      "Strong ownership mindset",
+      "Team-oriented problem solver"
+    ],
+    "interests": [
+      "Backend Architecture",
+      "Agentic AI Workflows",
+      "Retrieval-Augmented Generation (RAG)",
+      "Full-stack Engineering",
+      "System Design"
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "name": "Curiobot",
+      "description": "An AI-powered study assistant that converts static PDFs into structured, interactive learning sessions using multi-agent workflows, high-performance backend systems, and visual mind mapping.",
+      "type": "AI Application",
+      "live": null,
+      "github": "https://github.com/harshsrivastava05/Curiobot",
+      "technologies": [
+        "Next.js",
+        "FastAPI",
+        "Python asyncio",
+        "LangGraph",
+        "Redis",
+        "Pinecone",
+        "Docker",
+        "React Flow",
+        "TypeScript"
+      ],
+      "keyFeatures": [
+        "Multi-agent LangGraph workflow",
+        "PDF-to-knowledge transformation",
+        "RAG-powered question answering",
+        "Sub-100ms retrieval using Redis",
+        "Async parallel pipelines",
+        "Vector search with Pinecone",
+        "Mind-map visualization",
+        "Containerized microservices"
+      ],
+      "features": [
+        "Implements a multi-agent pipeline using LangGraph with nodes for topic extraction, summarization, Q&A, and mind-map generation.",
+        "Handles PDF ingestion via Google Cloud Storage and triggers async processing through Python asyncio workers.",
+        "FastAPI routes orchestrate embeddings, metadata extraction, and retrieval without blocking I/O.",
+        "Stores embeddings in Pinecone and performs similarity search for context retrieval.",
+        "Redis provides low-latency caching of document metadata and processed chunks.",
+        "Generates hierarchical mind-map JSON structures consumed by React Flow on the frontend.",
+        "Deployed as separate Dockerized services for isolated, reproducible builds."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Document Analyzer",
+      "description": "An AI-powered document analysis platform that converts uploaded files into conversational insights using retrieval, LLMs, and Next.js UI.",
+      "type": "AI Application",
+      "live": "https://document-analyzer-ten.vercel.app/",
+      "github": "https://github.com/harshsrivastava05/Document-Analyzer",
+      "technologies": [
+        "Next.js",
+        "FastAPI",
+        "Pinecone",
+        "Google Cloud Storage",
+        "NextAuth",
+        "TypeScript"
+      ],
+      "keyFeatures": [
+        "RAG-based document analysis",
+        "Conversational answer generation",
+        "Secure OAuth + JWT authentication",
+        "Persistent chat history",
+        "Cloud storage integration",
+        "High-accuracy vector retrieval"
+      ],
+      "features": [
+        "Uploads documents through Next.js API routes and stores them in Google Cloud Storage.",
+        "Triggers backend parsing and embedding generation through FastAPI endpoints.",
+        "Stores embeddings and metadata in Pinecone for high-accuracy retrieval.",
+        "Chat history is persisted in NeonDB for long-term session continuity.",
+        "Uses Gemini 2.5 Flash for context-aware answer synthesis.",
+        "Implements secure OAuth + JWT session handling via NextAuth.",
+        "Provides type-safe frontend–backend communication through TypeScript models."
+      ]
+    },
+    {
+      "id": 3,
+      "name": "ChessVerse",
+      "description": "A modern, real-time multiplayer chess application built for high performance and seamless user experience with a futuristic 'Cyber-Chess' aesthetic.",
+      "type": "Real-time Game",
+      "live": null,
+      "github": "https://github.com/harshsrivastava05/ChessVerse",
+      "technologies": [
+        "Next.js 16",
+        "TypeScript",
+        "Tailwind CSS v4",
+        "Node.js",
+        "WebSockets",
+        "chess.js",
+        "Framer Motion"
+      ],
+      "keyFeatures": [
+        "Real-time multiplayer gameplay",
+        "Optimistic UI updates",
+        "Server-side move validation",
+        "FIFO Matchmaking system",
+        "Modern Glassmorphism UI"
+      ],
+      "features": [
+        "Implements a Client-Server architecture with custom WebSocket handling using the `ws` library.",
+        "Features a Singleton `GameManager` for efficient matchmaking and game state management.",
+        "Validates all moves server-side using `chess.js` to prevent cheating and ensure integrity.",
+        "Uses optimistic UI updates on the frontend for a lag-free experience, with server reconciliation.",
+        "Styled with Tailwind CSS v4, featuring a dark 'Cyber-Chess' theme with neon emerald accents."
+      ]
+    },
+    {
+      "id": 4,
+      "name": "ClickPe.ai",
+      "description": "An intelligent financial dashboard that aggregates loan offers and provides personalized recommendations based on user credit profiles, featuring an AI-driven financial assistant.",
+      "type": "FinTech Platform",
+      "live": null,
+      "github": "https://github.com/harshsrivastava05/ClickPe.ai",
+      "technologies": [
+        "Next.js 16",
+        "TypeScript",
+        "Tailwind CSS v4",
+        "Prisma ORM",
+        "PostgreSQL",
+        "Vercel AI SDK",
+        "ShadCN UI"
+      ],
+      "keyFeatures": [
+        "Personalized Loan Matching",
+        "AI Financial Assistant",
+        "Real-time Credit Analysis",
+        "Secure Authentication",
+        "Interactive Dashboard"
+      ],
+      "features": [
+        "Aggregates and filters loan products based on dynamic user criteria like credit score, income, and tenure.",
+        "Integrates Vercel AI SDK to provide a context-aware chat assistant for financial guidance.",
+        "Uses Next.js App Router and Server Actions for secure and efficient data handling.",
+        "Implements a robust PostgreSQL database schema managed via Prisma ORM.",
+        "Features a responsive, accessible UI built with Tailwind CSS v4 and Radix UI components.",
+        "Secure authentication flow using HTTP-only cookies and JWT."
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Ashmark – Premium T-Shirt E-Commerce Platform",
+      "description": "A production-grade eCommerce platform with complete product flows, admin dashboards, and secure payments.",
+      "type": "E-commerce",
+      "live": "https://ashmark.vercel.app/",
+      "github": "https://github.com/harshsrivastava05/ashmark",
+      "technologies": [
+        "Next.js 15",
+        "TypeScript",
+        "Tailwind CSS",
+        "Prisma ORM",
+        "MySQL",
+        "Razorpay",
+        "NextAuth.js"
+      ],
+      "keyFeatures": [
+        "Product catalogue with search + filters",
+        "Secure Razorpay payment flow",
+        "Role-based admin dashboard",
+        "Order + inventory management",
+        "Wishlist + reviews",
+        "Responsive Radix UI components"
+      ],
+      "features": [
+        "Implements guest carts through localStorage and authenticated carts in MySQL via Prisma.",
+        "End-to-end order lifecycle: Razorpay order creation → payment signature verification → persistent order tracking.",
+        "Admin panel built with custom Next.js server components and ShadCN primitives.",
+        "UploadThing handles product image uploads with metadata stored in Prisma.",
+        "Catalog uses infinite scrolling and dynamic routes for efficient rendering.",
+        "Role-based access controls allow admins to manage products, orders, and users."
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Synapsis Portfolio Website",
+      "description": "A professional portfolio website built for Synapsis Medical Technologies, showcasing projects with smooth UI animations.",
+      "type": "Portfolio Website",
+      "live": "https://synapsis-six.vercel.app/",
+      "github": "https://github.com/harshsrivastava05/Synapsis",
+      "technologies": [
+        "Next.js",
+        "Tailwind CSS",
+        "ShadCN",
+        "Framer Motion"
+      ],
+      "keyFeatures": [
+        "Smooth animations",
+        "Responsive layout",
+        "High-performance UI",
+        "Brand-focused design"
+      ],
+      "features": [
+        "Statically rendered pages improve performance and SEO.",
+        "Framer Motion controls staggered element animations and page transitions.",
+        "UI built from reusable components — cards, sections, headers, grids.",
+        "Tailwind + ShadCN form a consistent design system across the site.",
+        "Deployed as a lightweight Next.js static build."
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Twitter Clone",
+      "description": "A MERN-based microblogging platform featuring Google authentication and real-time posting.",
+      "type": "Social Media",
+      "live": null,
+      "github": "https://github.com/harshsrivastava05/Twitter-Clone",
+      "technologies": [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Material UI"
+      ],
+      "keyFeatures": [
+        "Google OAuth authentication",
+        "Post creation + feed updates",
+        "Responsive modern UI",
+        "Scalable backend architecture"
+      ],
+      "features": [
+        "REST API handles posts, user profiles, and timeline retrieval.",
+        "Google OAuth provides secure session handling.",
+        "Uses MongoDB for storing posts, comments, and media references.",
+        "Infinite scroll is implemented using paginated queries.",
+        "UploadThing supports media uploads with URLs stored in MongoDB.",
+        "Material UI defines a modular visual component system."
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Chat Website",
+      "description": "A real-time messaging platform using WebSockets for instant communication.",
+      "type": "Real-time Communication",
+      "live": null,
+      "github": "https://github.com/harshsrivastava05/Chat-Website",
+      "technologies": [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "WebSockets"
+      ],
+      "keyFeatures": [
+        "Real-time messaging engine",
+        "WebSocket-based communication",
+        "Fast UI updates",
+        "Stable performance under load"
+      ],
+      "features": [
+        "Uses the low-level `ws` library to manage WebSocket connections manually.",
+        "Each connected client receives broadcasted messages with minimal overhead.",
+        "MongoDB persists messages for long-term history retrieval.",
+        "Implements online/offline presence using connection lifecycle events.",
+        "React frontend listens to WebSocket events to instantly reflect new messages."
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Foodie Website",
+      "description": "A clean, modern recipe platform allowing users to browse and upload recipes.",
+      "type": "Web Application",
+      "live": null,
+      "github": "https://github.com/harshsrivastava05/Foodie-Website",
+      "technologies": [
+        "Next.js",
+        "Tailwind CSS"
+      ],
+      "keyFeatures": [
+        "Recipe upload",
+        "Recipe browsing",
+        "Responsive modern UI",
+        "Fast rendering"
+      ],
+      "features": [
+        "Stores recipe metadata, text, and images inside a database.",
+        "Uses UploadThing or custom API routes for media uploads.",
+        "Guest-only browsing and submission — no authentication required.",
+        "Server-rendered pages for SEO and fast load times.",
+        "Tailwind components provide reusable layout and card structures."
+      ]
+    }
+  ],
+  "skills": {
+    "frontend": [
+      "React.js",
+      "Next.js 14/15/16",
+      "Tailwind CSS",
+      "Radix UI",
+      "JavaScript/TypeScript"
+    ],
+    "backend": [
+      "Node.js",
+      "Express.js",
+      "FastAPI",
+      "Python asyncio",
+      "LangGraph",
+      "Redis",
+      "Docker"
+    ],
+    "databases": [
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Pinecone (Vector DB)"
+    ],
+    "tools": [
+      "Git/GitHub",
+      "Vercel",
+      "Render",
+      "Google Cloud",
+      "WebSockets",
+      "Docker"
+    ],
+    "specializations": [
+      "Backend Architecture",
+      "RAG Systems",
+      "Agentic AI Workflows",
+      "Real-time Communication Systems",
+      "E-commerce Architecture",
+      "Authentication Systems",
+      "System Design"
+    ]
+  },
+  "workExperience": [
+    {
+      "company": "Synapsis Medical Technologies Inc.",
+      "role": "Software Development Intern",
+      "type": "Internship",
+      "location": "Remote"
+    }
+  ],
+  "careerFocus": {
+    "targetRoles": [
+      "AI Engineer",
+      "Full-stack Developer",
+      "Backend Engineer",
+      "LLM/RAG Engineer",
+      "Software Engineer"
+    ],
+    "targetCompanies": [
+      "AI-first Startups",
+      "Product Companies",
+      "Tech-driven Organizations"
+    ],
+    "recruitmentStage": "Actively applying and interviewing"
+  },
+  "deploymentPlatforms": [
+    "Vercel",
+    "Render",
+    "Google Cloud",
+    "Netlify",
+    "Railway"
+  ],
+  "additionalInfo": {
+    "githubPresence": "Active with multiple full-stack and AI repositories",
+    "competitiveProgramming": "250+ problems solved",
+    "systemDesign": "Actively learning distributed systems and backend design"
+  }
+}
